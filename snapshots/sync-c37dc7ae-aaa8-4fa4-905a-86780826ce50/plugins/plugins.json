@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "name": "@linxin666/dsh-web-all",
+      "version": "0.4.5",
+      "spec": "0.4.5",
+      "isBundle": true,
+      "inBundles": [
+        "@linxin666/dsh-web-all"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@liustack/modlens",
+      "version": "3.26.6",
+      "spec": "3.26.6",
+      "isBundle": true,
+      "inBundles": [
+        "@liustack/modlens"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@liustack/modsearch",
+      "version": "5.10.6",
+      "spec": "5.10.6",
+      "isBundle": true,
+      "inBundles": [
+        "@liustack/modsearch"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@michengai/dsh-agency-agents",
+      "version": "1.0.8",
+      "spec": "1.0.8",
+      "isBundle": true,
+      "inBundles": [
+        "@michengai/dsh-agency-agents"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-better-sidebar",
+      "version": "0.24.1",
+      "spec": "0.24.1",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-better-sidebar"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-client-auto-continue",
+      "version": "0.13.0",
+      "spec": "0.13.0",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-client-auto-continue"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-image-gen",
+      "version": "0.8.5",
+      "spec": "0.8.5",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-image-gen"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-mcp-bridge",
+      "version": "0.2.0",
+      "spec": "0.2.0",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-mcp-bridge"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dshmarket",
+      "version": "1.66.9",
+      "spec": "^1.66.9",
+      "isBundle": true,
+      "inBundles": [
+        "dshmarket"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-agent-team-profile",
+      "version": "",
+      "isBundle": true,
+      "inBundles": [
+        "@deepseek-ai/dsh-experimental-agent-team-profile"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-auto-review",
+      "version": "",
+      "isBundle": true,
+      "inBundles": [
+        "@deepseek-ai/dsh-experimental-auto-review"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-schedule-bundle",
+      "version": "",
+      "isBundle": true,
+      "inBundles": [
+        "@deepseek-ai/dsh-experimental-schedule-bundle"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@agents-anywhere/dsh-bridge-next",
+      "version": "",
+      "isBundle": true,
+      "inBundles": [
+        "@agents-anywhere/dsh-bridge-next"
+      ],
+      "enabled": true
+    }
+  ],
+  "patch": [],
+  "pnpmWorkspace": "packages:\n  - .\n\nnodeLinker: hoisted\nautoInstallPeers: false\nminimumReleaseAgeExclude:\n  - '@linxin666/dsh-client-ui-community-plugins@0.4.4'\n  - '@linxin666/dsh-client-ui-git-graph@0.4.4'\n  - '@linxin666/dsh-client-ui-market@0.4.4'\n  - '@linxin666/dsh-client-ui-model-capabilities@0.4.4'\n  - '@linxin666/dsh-client-ui-plugin-manager@0.4.4'\n  - '@linxin666/dsh-client-ui-preset-center@0.4.4'\n  - '@linxin666/dsh-client-ui-skill-explorer@0.4.4'\n  - '@linxin666/dsh-client-ui-skin-center@0.4.4'\n  - '@linxin666/dsh-client-ui-task-board@0.4.4'\n  - '@linxin666/dsh-client-ui-web-ui-settings@0.4.4'\n  - '@linxin666/dsh-i18n@0.4.4'\n  - '@linxin666/dsh-liangshen@0.4.4'\n  - '@linxin666/dsh-pet@0.4.4'\n  - '@linxin666/dsh-remote-web-ui@0.4.4'\n  - '@linxin666/dsh-session-archive@0.4.4'\n  - '@linxin666/dsh-ssh@0.4.4'\n  - '@linxin666/dsh-update@0.4.4'\n  - '@linxin666/dsh-usage@0.4.4'\n  - '@linxin666/dsh-web-all@0.4.4'\n  - dshmarket@1.66.6\n  - dsh-config-manager@0.1.68\n  - dsh-client-auto-continue@0.12.1\n  - '@vectorize-io/hindsight-coding-agents@0.8.0'\n  - dsh-image-gen@0.8.5\n  - '@michengai/dsh-agency-agents@1.0.7'\nallowBuilds:\n  cloudflared: true\n  cpu-features: true\n  ssh2: true\n"
+}
