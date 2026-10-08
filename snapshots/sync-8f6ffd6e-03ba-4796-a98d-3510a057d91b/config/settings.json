@@ -1,0 +1,1968 @@
+{
+  "version": 1,
+  "namespaces": {
+    "session-log-deepseek": {
+      "value": {
+        "enabled": true
+      },
+      "base": {
+        "enabled": true
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "agent-default-model": {
+      "value": {
+        "provider": "trae",
+        "model": "Doubao-Seed-Evolving"
+      },
+      "base": {
+        "provider": "deepseek-official",
+        "model": "deepseek-flash"
+      },
+      "revision": 1,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "llm-pi-ai": {
+      "value": {
+        "providers": {
+          "cjdx": {
+            "apiKeyEnv": "CJDX_API_KEY",
+            "displayName": "cjdx",
+            "api": "openai-completions",
+            "baseURL": "http://api.yangtzeu.edu.cn/v1",
+            "models": [
+              {
+                "id": "DeepSeek-V4.1-Flash",
+                "name": "DeepSeek-V4.1-Flash",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "DeepSeek-V4-Flash",
+                "name": "DeepSeek-V4-Flash",
+                "input": [],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3.6-35b-A3B",
+                "name": "Qwen3.6-35b-A3B",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-embedding-8B",
+                "name": "Qwen3-embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-reranker-8B",
+                "name": "Qwen3-reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-reranker-4B",
+                "name": "Qwen3-reranker-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-embedding-4B",
+                "name": "Qwen3-embedding-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3.8-27B",
+                "name": "Qwen3.8-27B",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "apinebula-gpt": {
+            "apiKeyEnv": "APINEBULA_GPT_API_KEY",
+            "displayName": "apinebula-gpt",
+            "api": "openai-responses",
+            "baseURL": "https://apinebula.ai/v1",
+            "models": [
+              {
+                "id": "gpt-6.1-sol",
+                "name": "gpt-6.1-sol",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "gpt-6-astra",
+                "name": "gpt-6-astra",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "gpt-6-sol",
+                "name": "gpt-6-sol",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          }
+        }
+      },
+      "base": {
+        "providers": {}
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "pwsh-sandbox": {
+      "value": {
+        "timeoutMs": 120000,
+        "maxTimeoutMs": 600000,
+        "maxOutputBytes": 64000,
+        "maxSpillBytes": 67108864,
+        "graceMs": 3000
+      },
+      "base": {
+        "timeoutMs": 120000,
+        "maxTimeoutMs": 600000,
+        "maxOutputBytes": 64000,
+        "maxSpillBytes": 67108864,
+        "graceMs": 3000
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "permission": {
+      "value": {},
+      "base": {},
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "subagent": {
+      "value": {
+        "maxDepth": 1,
+        "maxActiveSubagents": 8
+      },
+      "base": {
+        "maxDepth": 1,
+        "maxActiveSubagents": 8
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-search-deepseek": {
+      "value": {
+        "apiKeyEnv": "DEEPSEEK_API_KEY",
+        "model": "deepseek-v4-flash",
+        "apiVersion": "2023-06-01",
+        "maxTokens": 4096,
+        "maxUses": 5
+      },
+      "base": {
+        "apiKeyEnv": "DEEPSEEK_API_KEY",
+        "model": "deepseek-v4-flash",
+        "apiVersion": "2023-06-01",
+        "maxTokens": 4096,
+        "maxUses": 5
+      },
+      "revision": 28,
+      "applies": [
+        "live"
+      ],
+      "secrets": [
+        {
+          "path": [
+            "apiKey"
+          ],
+          "set": false
+        }
+      ]
+    },
+    "agent-loop": {
+      "value": {
+        "maxParallelToolCalls": 10
+      },
+      "base": {
+        "maxParallelToolCalls": 10
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "llm-deepseek": {
+      "value": {
+        "maxTokens": 256000,
+        "defaultContextWindow": 1000000,
+        "models": [
+          {
+            "id": "deepseek-flash",
+            "name": "DeepSeek-V41-Flash",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text",
+              "image"
+            ],
+            "systemPromptUpdate": "in-history",
+            "toolUpdate": "addition-only"
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek-V4-Pro",
+            "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text"
+            ]
+          }
+        ],
+        "streamIdleTimeoutMs": 300000,
+        "maxRequestFilesBytes": 134217728,
+        "maxInlineRequestImageBytes": 20971520,
+        "maxImagesPerRequest": 600,
+        "imageOffloadByteQuantum": 67108864,
+        "inlineImageOffloadByteQuantum": 10485760,
+        "imageOffloadCountQuantum": 20,
+        "filesApiTimeoutMs": 60000,
+        "fileExpiresAfterSeconds": 604800,
+        "fileRefreshMarginSeconds": 3600,
+        "fileQuotaCleanupBatch": 100,
+        "apiKeyEnv": "DEEPSEEK_API_KEY"
+      },
+      "base": {
+        "maxTokens": 256000,
+        "defaultContextWindow": 1000000,
+        "models": [
+          {
+            "id": "deepseek-flash",
+            "name": "DeepSeek-V41-Flash",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text",
+              "image"
+            ],
+            "systemPromptUpdate": "in-history",
+            "toolUpdate": "addition-only"
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek-V4-Pro",
+            "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text"
+            ]
+          }
+        ],
+        "streamIdleTimeoutMs": 300000,
+        "maxRequestFilesBytes": 134217728,
+        "maxInlineRequestImageBytes": 20971520,
+        "maxImagesPerRequest": 600,
+        "imageOffloadByteQuantum": 67108864,
+        "inlineImageOffloadByteQuantum": 10485760,
+        "imageOffloadCountQuantum": 20,
+        "filesApiTimeoutMs": 60000,
+        "fileExpiresAfterSeconds": 604800,
+        "fileRefreshMarginSeconds": 3600,
+        "fileQuotaCleanupBatch": 100,
+        "apiKeyEnv": "DEEPSEEK_API_KEY"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "llm-deepseek-account": {
+      "value": {
+        "maxTokens": 256000,
+        "defaultContextWindow": 1000000,
+        "models": [
+          {
+            "id": "deepseek-flash",
+            "name": "DeepSeek-V41-Flash",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text",
+              "image"
+            ],
+            "systemPromptUpdate": "in-history",
+            "toolUpdate": "addition-only"
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek-V4-Pro",
+            "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text"
+            ]
+          }
+        ],
+        "streamIdleTimeoutMs": 300000,
+        "maxRequestFilesBytes": 134217728,
+        "maxInlineRequestImageBytes": 20971520,
+        "maxImagesPerRequest": 600,
+        "imageOffloadByteQuantum": 67108864,
+        "inlineImageOffloadByteQuantum": 10485760,
+        "imageOffloadCountQuantum": 20,
+        "filesApiTimeoutMs": 60000,
+        "fileExpiresAfterSeconds": 604800,
+        "fileRefreshMarginSeconds": 3600,
+        "fileQuotaCleanupBatch": 100
+      },
+      "base": {
+        "maxTokens": 256000,
+        "defaultContextWindow": 1000000,
+        "models": [
+          {
+            "id": "deepseek-flash",
+            "name": "DeepSeek-V41-Flash",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text",
+              "image"
+            ],
+            "systemPromptUpdate": "in-history",
+            "toolUpdate": "addition-only"
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek-V4-Pro",
+            "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text"
+            ]
+          }
+        ],
+        "streamIdleTimeoutMs": 300000,
+        "maxRequestFilesBytes": 134217728,
+        "maxInlineRequestImageBytes": 20971520,
+        "maxImagesPerRequest": 600,
+        "imageOffloadByteQuantum": 67108864,
+        "inlineImageOffloadByteQuantum": 10485760,
+        "imageOffloadCountQuantum": 20,
+        "filesApiTimeoutMs": 60000,
+        "fileExpiresAfterSeconds": 604800,
+        "fileRefreshMarginSeconds": 3600,
+        "fileQuotaCleanupBatch": 100
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "subagent-model-selection-settings": {
+      "value": {
+        "enabled": false,
+        "allowedModels": []
+      },
+      "base": {
+        "enabled": false,
+        "allowedModels": []
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "ui-settings-account": {
+      "value": {
+        "version": 1,
+        "step": "done",
+        "purpose": null,
+        "process": "standard",
+        "completion": "skipped",
+        "usage": "compact",
+        "developerTools": false
+      },
+      "base": {
+        "version": 1,
+        "step": "welcome",
+        "usage": "compact",
+        "developerTools": false
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "ui-theme": {
+      "value": {
+        "preference": "system",
+        "fontSize": 14
+      },
+      "base": {
+        "preference": "system",
+        "fontSize": 14
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "locale": {
+      "value": {},
+      "base": {},
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "ui-settings": {
+      "value": {
+        "enabled": false
+      },
+      "base": {
+        "enabled": true
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "ui-settings-general": {
+      "value": {},
+      "base": {},
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "ui-conversation": {
+      "value": {
+        "busyEnter": "queue"
+      },
+      "base": {
+        "busyEnter": "queue"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "ui-chat": {
+      "value": {
+        "transcriptView": "standard",
+        "performanceUsage": "compact",
+        "linkOpening": "sidebar"
+      },
+      "base": {
+        "performanceUsage": "detailed",
+        "linkOpening": "sidebar"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "agent-preset-registry": {
+      "value": {},
+      "base": {},
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-settings": {
+      "value": {
+        "plugin": "@linxin666/dsh-client-ui-web-ui-settings"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-client-ui-web-ui-settings"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-plugin-manager": {
+      "value": {
+        "plugin": "@linxin666/dsh-client-ui-plugin-manager"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-client-ui-plugin-manager"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-market": {
+      "value": {
+        "plugin": "@linxin666/dsh-client-ui-market"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-client-ui-market"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-task-board": {
+      "value": {
+        "plugin": "@linxin666/dsh-client-ui-task-board"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-client-ui-task-board"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-task-board-github": {
+      "value": {
+        "plugin": "@linxin666/dsh-client-ui-task-board-github"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-client-ui-task-board-github"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-git-graph": {
+      "value": {
+        "plugin": "@linxin666/dsh-client-ui-git-graph"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-client-ui-git-graph"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-remote-web-ui": {
+      "value": {
+        "plugin": "@linxin666/dsh-remote-web-ui"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-remote-web-ui"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-update": {
+      "value": {
+        "plugin": "@linxin666/dsh-update"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-update"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-skill-explorer": {
+      "value": {
+        "plugin": "@linxin666/dsh-client-ui-skill-explorer"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-client-ui-skill-explorer"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-usage": {
+      "value": {
+        "plugin": "@linxin666/dsh-usage"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-usage"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-session-archive": {
+      "value": {
+        "plugin": "@linxin666/dsh-session-archive"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-session-archive"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-model-capabilities": {
+      "value": {
+        "plugin": "@linxin666/dsh-client-ui-model-capabilities"
+      },
+      "base": {
+        "plugin": "@linxin666/dsh-client-ui-model-capabilities"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-ui-skin-center": {
+      "value": {
+        "skin-background": {
+          "enabled": true,
+          "backgroundOpacity": 0,
+          "backgroundBlurEmpty": 0,
+          "backgroundBlurContent": 0,
+          "inputCardBlur": 10,
+          "bubbleOpacity": 50,
+          "bubbleBlur": 10
+        },
+        "skin-custom-theme": {
+          "version": 1,
+          "applied": false,
+          "light": {
+            "accent": "#4d6bfe",
+            "background": "#f7f8fa",
+            "foreground": "#262626",
+            "contrast": 50
+          },
+          "dark": {
+            "accent": "#7c91ff",
+            "background": "#171719",
+            "foreground": "#f3f3f3",
+            "contrast": 50
+          }
+        }
+      },
+      "base": {
+        "skin-background": {
+          "enabled": true,
+          "backgroundOpacity": 0,
+          "backgroundBlurEmpty": 0,
+          "backgroundBlurContent": 0,
+          "inputCardBlur": 10,
+          "bubbleOpacity": 50,
+          "bubbleBlur": 10
+        },
+        "skin-custom-theme": {
+          "version": 1,
+          "applied": false,
+          "light": {
+            "accent": "#4d6bfe",
+            "background": "#f7f8fa",
+            "foreground": "#262626",
+            "contrast": 50
+          },
+          "dark": {
+            "accent": "#7c91ff",
+            "background": "#171719",
+            "foreground": "#f3f3f3",
+            "contrast": 50
+          }
+        }
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "image-gen": {
+      "value": {
+        "provider": "google",
+        "googleModel": "gemini-3.1-flash-image",
+        "googleEndpoint": "https://generativelanguage.googleapis.com/v1beta/interactions",
+        "openaiBaseURL": "https://api.openai.com/v1",
+        "openaiModel": "gpt-image-2",
+        "openaiCompatBaseURL": "",
+        "openaiCompatModel": "",
+        "openaiCompatEditFormat": "multipart",
+        "openaiCompatEditExtra": {},
+        "openaiCompatSizes": {},
+        "seedreamBaseURL": "https://ark.cn-beijing.volces.com/api/v3",
+        "seedreamModel": "doubao-seedream-5-0-260128",
+        "seedreamOutputFormat": "jpeg",
+        "seedreamWatermark": true,
+        "seedreamBackground": "opaque",
+        "dashscopeEndpoint": "https://dashscope.aliyuncs.com/api/v1",
+        "dashscopeModel": "qwen-image-3.0",
+        "xaiBaseURL": "https://api.x.ai/v1",
+        "xaiModel": "grok-imagine-image",
+        "zhipuBaseURL": "https://open.bigmodel.cn/api/paas/v4",
+        "zhipuModel": "glm-image",
+        "comfyuiBaseURL": "http://127.0.0.1:8188",
+        "comfyuiWorkflows": [],
+        "comfyuiActiveWorkflow": "",
+        "comfyuiWorkflowJson": "",
+        "comfyuiWorkflowName": "",
+        "comfyuiTimeoutMs": 300000,
+        "saveToWorkspace": true,
+        "workspaceFolder": "dsh-image-gen",
+        "showProviderPill": false
+      },
+      "base": {
+        "provider": "google",
+        "googleModel": "gemini-3.1-flash-image",
+        "googleEndpoint": "https://generativelanguage.googleapis.com/v1beta/interactions",
+        "openaiBaseURL": "https://api.openai.com/v1",
+        "openaiModel": "gpt-image-2",
+        "openaiCompatBaseURL": "",
+        "openaiCompatModel": "",
+        "openaiCompatEditFormat": "multipart",
+        "openaiCompatEditExtra": {},
+        "openaiCompatSizes": {},
+        "seedreamBaseURL": "https://ark.cn-beijing.volces.com/api/v3",
+        "seedreamModel": "doubao-seedream-5-0-260128",
+        "seedreamOutputFormat": "jpeg",
+        "seedreamWatermark": true,
+        "seedreamBackground": "opaque",
+        "dashscopeEndpoint": "https://dashscope.aliyuncs.com/api/v1",
+        "dashscopeModel": "qwen-image-3.0",
+        "xaiBaseURL": "https://api.x.ai/v1",
+        "xaiModel": "grok-imagine-image",
+        "zhipuBaseURL": "https://open.bigmodel.cn/api/paas/v4",
+        "zhipuModel": "glm-image",
+        "comfyuiBaseURL": "http://127.0.0.1:8188",
+        "comfyuiWorkflows": [],
+        "comfyuiActiveWorkflow": "",
+        "comfyuiWorkflowJson": "",
+        "comfyuiWorkflowName": "",
+        "comfyuiTimeoutMs": 300000,
+        "saveToWorkspace": true,
+        "workspaceFolder": "dsh-image-gen",
+        "showProviderPill": false
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "better-sidebar": {
+      "value": {
+        "autoOpenSubagent": true,
+        "autoOpenJobs": true,
+        "tasksViewMode": "graph",
+        "mobileNoAutoOpen": true,
+        "mobileDefaultTree": true,
+        "agentOpenTools": false,
+        "editorExplorer": false,
+        "titleBarCompat": false,
+        "titleBarStripPx": 40,
+        "htmlViewerNoSandbox": false,
+        "htmlViewerDefaultUnsafe": false,
+        "tabsEnabled": {},
+        "viewersEnabled": {},
+        "pluginSettings": {}
+      },
+      "base": {
+        "autoOpenSubagent": true,
+        "autoOpenJobs": true,
+        "tasksViewMode": "graph",
+        "mobileNoAutoOpen": true,
+        "mobileDefaultTree": true,
+        "agentOpenTools": false,
+        "editorExplorer": false,
+        "titleBarCompat": false,
+        "titleBarStripPx": 40,
+        "htmlViewerNoSandbox": false,
+        "htmlViewerDefaultUnsafe": false,
+        "tabsEnabled": {},
+        "viewersEnabled": {},
+        "pluginSettings": {}
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "agency-agents": {
+      "value": {
+        "enabled": [],
+        "customExperts": [],
+        "customTeams": [],
+        "enabledTeams": []
+      },
+      "base": {
+        "enabled": [],
+        "customExperts": [],
+        "customTeams": [],
+        "enabledTeams": []
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "auto-continue": {
+      "value": {
+        "locale": "zh",
+        "continueText": "继续完成原任务，从中断处接着处理；先确认上一步状态，避免重复已完成的操作和内容。",
+        "continueTextMaxTokens": "",
+        "resumeSilentTurns": true,
+        "resumeCompletedTurns": false,
+        "continueTextSilent": "",
+        "continueTextLoop": "",
+        "guardTools": true,
+        "guardPendingText": "",
+        "guardDoneText": "",
+        "graceMs": 5000,
+        "cooldownMs": 30000,
+        "maxConsecutive": 3,
+        "scanOnBoot": true,
+        "scanLimit": 3,
+        "freshMs": 900000,
+        "verbose": true,
+        "classify": true,
+        "retryableErrorPatterns": "",
+        "backoffFactor": 2,
+        "backoffMaxMs": 300000,
+        "notify": false,
+        "paused": false,
+        "showComposerToggle": true,
+        "loopGuard": true,
+        "loopShortChars": 40,
+        "loopWindowMs": 30000,
+        "loopShortCount": 12,
+        "loopRepeatText": 4,
+        "loopToolRepeat": 5,
+        "loopText": ""
+      },
+      "base": {
+        "locale": "zh",
+        "continueText": "",
+        "continueTextMaxTokens": "",
+        "resumeSilentTurns": true,
+        "resumeCompletedTurns": false,
+        "continueTextSilent": "",
+        "continueTextLoop": "",
+        "guardTools": true,
+        "guardPendingText": "",
+        "guardDoneText": "",
+        "graceMs": 3000,
+        "cooldownMs": 20000,
+        "maxConsecutive": 3,
+        "scanOnBoot": true,
+        "scanLimit": 8,
+        "freshMs": 900000,
+        "verbose": true,
+        "classify": true,
+        "retryableErrorPatterns": "",
+        "backoffFactor": 2,
+        "backoffMaxMs": 300000,
+        "notify": false,
+        "paused": false,
+        "showComposerToggle": true,
+        "loopGuard": true,
+        "loopShortChars": 40,
+        "loopWindowMs": 30000,
+        "loopShortCount": 12,
+        "loopRepeatText": 4,
+        "loopToolRepeat": 5,
+        "loopText": ""
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "web-search-free": {
+      "value": {
+        "provider": "bing",
+        "disabledEngines": [],
+        "fallbackOrder": [],
+        "fallbackOn": [
+          "quota",
+          "auth",
+          "bot-wall",
+          "transient",
+          "invalid-response",
+          "unknown"
+        ],
+        "cache": true,
+        "cacheTtl": 5,
+        "keyStorage": "credentials",
+        "lang": "zh",
+        "bingMarket": "zh-CN",
+        "safeSearch": "off",
+        "searxngInstances": [],
+        "platforms": [
+          "github",
+          "v2ex",
+          "bilibili",
+          "reddit",
+          "hn",
+          "stackoverflow",
+          "wikipedia",
+          "npm",
+          "youtube",
+          "vimeo"
+        ],
+        "zhPool": [],
+        "enPool": [],
+        "escalationEngines": [],
+        "legacyYamlMigrated": false
+      },
+      "base": {
+        "provider": "bing",
+        "disabledEngines": [],
+        "fallbackOrder": [],
+        "fallbackOn": [
+          "quota",
+          "auth",
+          "bot-wall",
+          "transient",
+          "invalid-response",
+          "unknown"
+        ],
+        "cache": true,
+        "cacheTtl": 5,
+        "keyStorage": "credentials",
+        "lang": "zh",
+        "bingMarket": "zh-CN",
+        "safeSearch": "off",
+        "searxngInstances": [],
+        "platforms": [
+          "github",
+          "v2ex",
+          "bilibili",
+          "reddit",
+          "hn",
+          "stackoverflow",
+          "wikipedia",
+          "npm",
+          "youtube",
+          "vimeo"
+        ],
+        "zhPool": [],
+        "enPool": [],
+        "escalationEngines": [],
+        "legacyYamlMigrated": false
+      },
+      "revision": 28,
+      "applies": [
+        "live"
+      ],
+      "secrets": [
+        {
+          "path": [
+            "anysearchApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "exaApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "tavilyApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "keenableApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "firecrawlApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "parallelApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "perplexityApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "serpbaseApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "serplyApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "deepseekApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "youcomApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "baiduApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "kimiApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "aliyunApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "doubaoApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "zhihuApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "openaiApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "geminiApiKey"
+          ],
+          "set": false
+        },
+        {
+          "path": [
+            "claudeApiKey"
+          ],
+          "set": false
+        }
+      ]
+    },
+    "dsh-connect-trae": {
+      "value": {
+        "edition": "auto",
+        "showPointsInMainUi": true,
+        "accounts": {},
+        "regions": {
+          "ai": {
+            "enabled": false,
+            "lastCatalog": [],
+            "enabledModelIds": [],
+            "imageModelIds": [],
+            "contextBudgets": {}
+          },
+          "cn": {
+            "enabled": true,
+            "lastCatalog": [
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high"
+                  ],
+                  "defaultEffort": "high"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high"
+                },
+                "id": "Doubao-Seed-2.1-Pro",
+                "name": "Seed-2.1-Pro-0915",
+                "contextWindow": 256000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.08,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "reasoningSupported": true,
+                "id": "Doubao-Seed-2.1-Turbo",
+                "name": "Seed-2.1-Turbo",
+                "contextWindow": 256000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.2,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 184000,
+                "reasoningSupported": true,
+                "id": "Doubao-Seed-Code",
+                "name": "Seed-Code",
+                "contextWindow": 184000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.06,
+                "wireFunction": "solo_agent_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "id": "minimax-m3",
+                "name": "MiniMax-M3",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.26,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 200000,
+                "reasoningSupported": true,
+                "id": "minimax-m2.7",
+                "name": "MiniMax-M2.7",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.27,
+                "wireFunction": "solo_coder",
+                "multimodal": false
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "high"
+                },
+                "reasoningEfforts": {
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "glm-5.2",
+                "name": "GLM-5.2",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.78,
+                "wireFunction": "solo_work_remote",
+                "multimodal": false
+              },
+              {
+                "reasoningSupported": true,
+                "id": "kimi-k2.7-code",
+                "name": "Kimi-K2.7-Code",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.83,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 200000,
+                "reasoningSupported": true,
+                "id": "kimi-k2.6",
+                "name": "Kimi-K2.6",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.75,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "id": "qwen-3.7-plus",
+                "name": "Qwen3.7-Plus",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.25,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "reasoningSupported": true,
+                "id": "qwen-3.6-plus",
+                "name": "Qwen3.6-Plus",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.26,
+                "wireFunction": "solo_coder",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "id": "Doubao-Seed-Evolving",
+                "name": "Seed-Evolving",
+                "contextWindow": 256000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.08,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high"
+                  ],
+                  "defaultEffort": "high"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high"
+                },
+                "id": "step-5-preview",
+                "name": "Step-5-Preview",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.48,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "xhigh"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "glm-5.3",
+                "name": "GLM-5.3",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.78,
+                "wireFunction": "solo_work_remote",
+                "multimodal": false
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "high"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "deepseek-v4.1-flash",
+                "name": "DeepSeek-V4.1-Flash",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.15,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "high"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "DeepSeek-V4-Flash-Official",
+                "name": "DeepSeek-V4-Flash 正式版",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.2,
+                "wireFunction": "solo_work_remote",
+                "multimodal": false
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "high"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "DeepSeek-V4-Pro-Official",
+                "name": "DeepSeek-V4-Pro 正式版",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.72,
+                "wireFunction": "solo_work_remote",
+                "multimodal": false
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "xhigh"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "kimi-k3",
+                "name": "Kimi-K3",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 1.83,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "high"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "qwen3.8-max",
+                "name": "Qwen3.8-Max",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 1.5,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 184000,
+                "reasoningSupported": true,
+                "id": "Doubao-Seed-2.0-Code",
+                "name": "Doubao-Seed-2.0-Code",
+                "contextWindow": 184000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.39,
+                "wireFunction": "solo_work_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 200000,
+                "reasoningSupported": true,
+                "id": "glm-5.1",
+                "name": "GLM-5.1",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.83,
+                "wireFunction": "solo_agent_remote",
+                "multimodal": false
+              },
+              {
+                "maxContextWindow": 200000,
+                "reasoningSupported": true,
+                "id": "glm-5v-turbo",
+                "name": "GLM-5V-Turbo",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.51,
+                "wireFunction": "solo_coder",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 200000,
+                "reasoningSupported": true,
+                "id": "glm-5",
+                "name": "GLM-5",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.7,
+                "wireFunction": "solo_work_remote",
+                "multimodal": false
+              },
+              {
+                "maxContextWindow": 200000,
+                "reasoningSupported": true,
+                "id": "DeepSeek-V4-Pro",
+                "name": "DeepSeek-V4-Pro",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.72,
+                "wireFunction": "solo_work_remote",
+                "multimodal": false
+              },
+              {
+                "maxContextWindow": 200000,
+                "reasoningSupported": true,
+                "id": "DeepSeek-V4-Flash",
+                "name": "DeepSeek-V4-Flash",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.2,
+                "wireFunction": "solo_work_remote",
+                "multimodal": false
+              },
+              {
+                "maxContextWindow": 200000,
+                "reasoningSupported": true,
+                "id": "kimi-k2.5",
+                "name": "Kimi-K2.5",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.48,
+                "wireFunction": "solo_coder",
+                "multimodal": true
+              },
+              {
+                "reasoningSupported": true,
+                "id": "qwen-3.5",
+                "name": "Qwen3.5-Plus",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.26,
+                "wireFunction": "solo_agent_remote",
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "xhigh"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "glm-5.3-flashx",
+                "name": "GLM-5.3-FlashX",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.31,
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "xhigh"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "glm-5.3-flash",
+                "name": "GLM-5.3-Flash",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.06,
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "xhigh"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "kimi-k2.8-preview",
+                "name": "Kimi-K2.8-Preview",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.98,
+                "multimodal": true
+              },
+              {
+                "maxContextWindow": 1000000,
+                "reasoningSupported": true,
+                "reasoning": {
+                  "supported": [
+                    "low",
+                    "high",
+                    "xhigh"
+                  ],
+                  "defaultEffort": "high"
+                },
+                "reasoningEfforts": {
+                  "low": "light",
+                  "high": "high",
+                  "xhigh": "extra_high"
+                },
+                "id": "qwen3.8-flash",
+                "name": "Qwen3.8-Flash",
+                "contextWindow": 200000,
+                "input": [
+                  "text"
+                ],
+                "creditMultiplier": 0.08,
+                "multimodal": true
+              }
+            ],
+            "enabledModelIds": [
+              "Doubao-Seed-2.1-Pro",
+              "Doubao-Seed-2.1-Turbo",
+              "step-5-preview",
+              "deepseek-v4.1-flash",
+              "kimi-k3",
+              "qwen3.8-max",
+              "glm-5.3-flashx",
+              "glm-5.3-flash",
+              "qwen3.8-flash",
+              "Doubao-Seed-Evolving"
+            ],
+            "imageModelIds": [],
+            "contextBudgets": {
+              "Doubao-Seed-2.1-Pro": 1000000,
+              "Doubao-Seed-Evolving": 1000000,
+              "deepseek-v4.1-flash": 1000000
+            }
+          }
+        }
+      },
+      "base": {
+        "edition": "auto",
+        "showPointsInMainUi": false,
+        "accounts": {},
+        "regions": {}
+      },
+      "revision": 1,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    },
+    "mnemon": {
+      "value": {
+        "runtimeUserScope": "storage",
+        "customPacks": [],
+        "timeoutMs": 10000,
+        "defaultRecallLimit": 10,
+        "runtimeMemory": {
+          "memoryLimitBytes": 10240,
+          "userLimitBytes": 4096,
+          "maintenanceMaxTokens": 8192
+        },
+        "embedding": {
+          "enabled": true,
+          "endpoint": "http://api.yangtzeu.edu.cn/v1",
+          "model": "Qwen3-embedding-8B",
+          "apiKey": "",
+          "protocol": "openai"
+        },
+        "memoryTopology": {
+          "layers": {}
+        },
+        "memoryView": {
+          "entries": {}
+        },
+        "recallQuality": {
+          "policy": "strict-v1",
+          "lowScoreThreshold": 0.25,
+          "highScoreThreshold": 0.6,
+          "candidateMultiplier": 3,
+          "maxMediumResults": 4,
+          "maxUnknownResults": 2
+        },
+        "routingGuidance": true,
+        "displayMode": "sidebar",
+        "tabEnabled": true,
+        "writeEnabled": true,
+        "lifecycleEnabled": true,
+        "recallMode": "guided",
+        "writebackMode": "guided",
+        "idleReviewMs": 30000,
+        "idleReview": {
+          "enabled": true,
+          "runtimeMemory": true,
+          "provider": "spawn",
+          "fallback": "spawn",
+          "agentTeams": "pause",
+          "minIntervalMs": 300000,
+          "maxPerSession": 20,
+          "maxContextChars": 24000,
+          "maxTokens": 4096
+        },
+        "conversationInteraction": {
+          "toolviews": false,
+          "turnBar": true,
+          "saveAction": true
+        },
+        "persistenceStrategy": {
+          "rules": {
+            "allowedProviderIds": [],
+            "requiredCapabilities": []
+          },
+          "providerConnections": {}
+        },
+        "taskAgentModel": {}
+      },
+      "base": {
+        "runtimeUserScope": "storage",
+        "customPacks": [],
+        "timeoutMs": 10000,
+        "defaultRecallLimit": 10,
+        "runtimeMemory": {
+          "memoryLimitBytes": 10240,
+          "userLimitBytes": 4096,
+          "maintenanceMaxTokens": 8192
+        },
+        "embedding": {
+          "enabled": false,
+          "endpoint": "http://localhost:11434",
+          "model": "nomic-embed-text",
+          "apiKey": "",
+          "protocol": "auto"
+        },
+        "memoryTopology": {
+          "layers": {}
+        },
+        "memoryView": {
+          "entries": {}
+        },
+        "recallQuality": {
+          "policy": "strict-v1",
+          "lowScoreThreshold": 0.25,
+          "highScoreThreshold": 0.6,
+          "candidateMultiplier": 3,
+          "maxMediumResults": 4,
+          "maxUnknownResults": 2
+        },
+        "routingGuidance": true,
+        "displayMode": "sidebar",
+        "tabEnabled": true,
+        "writeEnabled": true,
+        "lifecycleEnabled": true,
+        "recallMode": "guided",
+        "writebackMode": "guided",
+        "idleReviewMs": 30000,
+        "idleReview": {
+          "enabled": true,
+          "runtimeMemory": true,
+          "provider": "spawn",
+          "fallback": "spawn",
+          "agentTeams": "pause",
+          "minIntervalMs": 300000,
+          "maxPerSession": 20,
+          "maxContextChars": 24000,
+          "maxTokens": 4096
+        },
+        "conversationInteraction": {
+          "toolviews": false,
+          "turnBar": true,
+          "saveAction": true
+        },
+        "persistenceStrategy": {
+          "rules": {
+            "allowedProviderIds": [],
+            "requiredCapabilities": []
+          },
+          "providerConnections": {}
+        },
+        "taskAgentModel": {}
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    }
+  }
+}
