@@ -1,0 +1,722 @@
+{
+  "version": 1,
+  "providers": {
+    "llm-deepseek": {
+      "route": "llm-deepseek",
+      "namespace": "llm-deepseek",
+      "revision": 0,
+      "secrets": [],
+      "maxTokens": 256000,
+      "defaultContextWindow": 1000000,
+      "models": [
+        {
+          "id": "deepseek-flash",
+          "name": "DeepSeek-V41-Flash",
+          "contextWindow": 1000000,
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "systemPromptUpdate": "in-history",
+          "toolUpdate": "addition-only"
+        },
+        {
+          "id": "deepseek-v4-pro",
+          "name": "DeepSeek-V4-Pro",
+          "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+          "contextWindow": 1000000,
+          "inputModalities": [
+            "text"
+          ]
+        }
+      ],
+      "streamIdleTimeoutMs": 300000,
+      "maxRequestFilesBytes": 134217728,
+      "maxInlineRequestImageBytes": 20971520,
+      "maxImagesPerRequest": 600,
+      "imageOffloadByteQuantum": 67108864,
+      "inlineImageOffloadByteQuantum": 10485760,
+      "imageOffloadCountQuantum": 20,
+      "filesApiTimeoutMs": 60000,
+      "fileExpiresAfterSeconds": 604800,
+      "fileRefreshMarginSeconds": 3600,
+      "fileQuotaCleanupBatch": 100,
+      "apiKeyEnv": "DEEPSEEK_API_KEY",
+      "raw": {
+        "maxTokens": 256000,
+        "defaultContextWindow": 1000000,
+        "models": [
+          {
+            "id": "deepseek-flash",
+            "name": "DeepSeek-V41-Flash",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text",
+              "image"
+            ],
+            "systemPromptUpdate": "in-history",
+            "toolUpdate": "addition-only"
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek-V4-Pro",
+            "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text"
+            ]
+          }
+        ],
+        "streamIdleTimeoutMs": 300000,
+        "maxRequestFilesBytes": 134217728,
+        "maxInlineRequestImageBytes": 20971520,
+        "maxImagesPerRequest": 600,
+        "imageOffloadByteQuantum": 67108864,
+        "inlineImageOffloadByteQuantum": 10485760,
+        "imageOffloadCountQuantum": 20,
+        "filesApiTimeoutMs": 60000,
+        "fileExpiresAfterSeconds": 604800,
+        "fileRefreshMarginSeconds": 3600,
+        "fileQuotaCleanupBatch": 100,
+        "apiKeyEnv": "DEEPSEEK_API_KEY"
+      }
+    },
+    "cjdx": {
+      "route": "cjdx",
+      "namespace": "llm-pi-ai",
+      "revision": 0,
+      "secrets": [],
+      "apiKeyEnv": "CJDX_API_KEY",
+      "displayName": "cjdx",
+      "api": "openai-completions",
+      "baseURL": "http://api.yangtzeu.edu.cn/v1",
+      "models": [
+        {
+          "id": "DeepSeek-V4.1-Flash",
+          "name": "DeepSeek-V4.1-Flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoningEfforts": {
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "DeepSeek-V4-Flash",
+          "name": "DeepSeek-V4-Flash",
+          "input": [],
+          "reasoningEfforts": {
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen3.6-35b-A3B",
+          "name": "Qwen3.6-35b-A3B",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoningEfforts": {
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen3-embedding-8B",
+          "name": "Qwen3-embedding-8B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen3-reranker-8B",
+          "name": "Qwen3-reranker-8B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen3-reranker-4B",
+          "name": "Qwen3-reranker-4B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen3-embedding-4B",
+          "name": "Qwen3-embedding-4B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen3.8-27B",
+          "name": "Qwen3.8-27B",
+          "input": [
+            "text",
+            "image"
+          ],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        }
+      ],
+      "modelOverrides": {},
+      "compat": {
+        "chatTemplateKwargs": {},
+        "chatTemplateArgs": {}
+      },
+      "defaultContextWindow": 262144,
+      "defaultMaxTokens": 32768,
+      "defaultInput": [
+        "text"
+      ],
+      "headers": {},
+      "thinkingBudgets": {},
+      "streamIdleTimeoutMs": 300000,
+      "maxRequestImageBytes": 20971520,
+      "requestImagePixelBudget": 4194304,
+      "requestImageMaxBytes": 1048576,
+      "raw": {
+        "providers": {
+          "cjdx": {
+            "apiKeyEnv": "CJDX_API_KEY",
+            "displayName": "cjdx",
+            "api": "openai-completions",
+            "baseURL": "http://api.yangtzeu.edu.cn/v1",
+            "models": [
+              {
+                "id": "DeepSeek-V4.1-Flash",
+                "name": "DeepSeek-V4.1-Flash",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "DeepSeek-V4-Flash",
+                "name": "DeepSeek-V4-Flash",
+                "input": [],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3.6-35b-A3B",
+                "name": "Qwen3.6-35b-A3B",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-embedding-8B",
+                "name": "Qwen3-embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-reranker-8B",
+                "name": "Qwen3-reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-reranker-4B",
+                "name": "Qwen3-reranker-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-embedding-4B",
+                "name": "Qwen3-embedding-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3.8-27B",
+                "name": "Qwen3.8-27B",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "apinebula-gpt": {
+            "apiKeyEnv": "APINEBULA_GPT_API_KEY",
+            "displayName": "apinebula-gpt",
+            "api": "openai-responses",
+            "baseURL": "https://apinebula.ai/v1",
+            "models": [
+              {
+                "id": "gpt-6.1-sol",
+                "name": "gpt-6.1-sol",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "gpt-6-astra",
+                "name": "gpt-6-astra",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "gpt-6-sol",
+                "name": "gpt-6-sol",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          }
+        }
+      }
+    },
+    "apinebula-gpt": {
+      "route": "apinebula-gpt",
+      "namespace": "llm-pi-ai",
+      "revision": 0,
+      "secrets": [],
+      "apiKeyEnv": "APINEBULA_GPT_API_KEY",
+      "displayName": "apinebula-gpt",
+      "api": "openai-responses",
+      "baseURL": "https://apinebula.ai/v1",
+      "models": [
+        {
+          "id": "gpt-6.1-sol",
+          "name": "gpt-6.1-sol",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoningEfforts": {
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "gpt-6-astra",
+          "name": "gpt-6-astra",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoningEfforts": {
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "gpt-6-sol",
+          "name": "gpt-6-sol",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoningEfforts": {
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        }
+      ],
+      "modelOverrides": {},
+      "compat": {
+        "chatTemplateKwargs": {},
+        "chatTemplateArgs": {}
+      },
+      "defaultContextWindow": 262144,
+      "defaultMaxTokens": 32768,
+      "defaultInput": [
+        "text"
+      ],
+      "headers": {},
+      "thinkingBudgets": {},
+      "streamIdleTimeoutMs": 300000,
+      "maxRequestImageBytes": 20971520,
+      "requestImagePixelBudget": 4194304,
+      "requestImageMaxBytes": 1048576,
+      "raw": {
+        "providers": {
+          "cjdx": {
+            "apiKeyEnv": "CJDX_API_KEY",
+            "displayName": "cjdx",
+            "api": "openai-completions",
+            "baseURL": "http://api.yangtzeu.edu.cn/v1",
+            "models": [
+              {
+                "id": "DeepSeek-V4.1-Flash",
+                "name": "DeepSeek-V4.1-Flash",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "DeepSeek-V4-Flash",
+                "name": "DeepSeek-V4-Flash",
+                "input": [],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3.6-35b-A3B",
+                "name": "Qwen3.6-35b-A3B",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-embedding-8B",
+                "name": "Qwen3-embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-reranker-8B",
+                "name": "Qwen3-reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-reranker-4B",
+                "name": "Qwen3-reranker-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3-embedding-4B",
+                "name": "Qwen3-embedding-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen3.8-27B",
+                "name": "Qwen3.8-27B",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "apinebula-gpt": {
+            "apiKeyEnv": "APINEBULA_GPT_API_KEY",
+            "displayName": "apinebula-gpt",
+            "api": "openai-responses",
+            "baseURL": "https://apinebula.ai/v1",
+            "models": [
+              {
+                "id": "gpt-6.1-sol",
+                "name": "gpt-6.1-sol",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "gpt-6-astra",
+                "name": "gpt-6-astra",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "gpt-6-sol",
+                "name": "gpt-6-sol",
+                "input": [
+                  "text",
+                  "image"
+                ],
+                "reasoningEfforts": {
+                  "low": "low",
+                  "medium": "medium",
+                  "high": "high",
+                  "xhigh": "xhigh",
+                  "max": "max"
+                },
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 3,
+  "transport": "git",
+  "git": {
+    "repoUrl": "https://github.com/yuhuizhou85/dsh-config-backup.git"
+  }
+}

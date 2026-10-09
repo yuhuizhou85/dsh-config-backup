@@ -1,0 +1,1114 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "name": "@eddyskywalker/dsh-chatgpt-subscription",
+      "version": "0.13.2",
+      "spec": "0.13.2",
+      "isBundle": true,
+      "inBundles": [
+        "@eddyskywalker/dsh-chatgpt-subscription"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@linxin666/dsh-web-all",
+      "version": "0.4.5",
+      "spec": "0.4.5",
+      "isBundle": true,
+      "inBundles": [
+        "@linxin666/dsh-web-all"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@liustack/modlens",
+      "version": "3.26.6",
+      "spec": "3.26.6",
+      "isBundle": true,
+      "inBundles": [
+        "@liustack/modlens"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@liustack/modsearch",
+      "version": "5.10.6",
+      "spec": "5.10.6",
+      "isBundle": true,
+      "inBundles": [
+        "@liustack/modsearch"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@michengai/dsh-agency-agents",
+      "version": "1.0.11",
+      "spec": "1.0.11",
+      "isBundle": true,
+      "inBundles": [
+        "@michengai/dsh-agency-agents"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@xmanrui/dsh-im",
+      "version": "4.37.0",
+      "spec": "4.37.0",
+      "isBundle": true,
+      "inBundles": [
+        "@xmanrui/dsh-im"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "billion-context",
+      "version": "0.1.189",
+      "spec": "0.1.187",
+      "isBundle": true,
+      "inBundles": [
+        "billion-context"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-better-sidebar",
+      "version": "0.24.1",
+      "spec": "0.24.1",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-better-sidebar"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-client-auto-continue",
+      "version": "0.14.2",
+      "spec": "0.14.2",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-client-auto-continue"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-connect-trae",
+      "version": "3.0.0",
+      "spec": "3.0.0",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-connect-trae"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-free-search",
+      "version": "0.8.1",
+      "spec": "0.8.1",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-free-search"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-image-gen",
+      "version": "0.8.5",
+      "spec": "0.8.5",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-image-gen"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-mnemon",
+      "version": "0.5.24",
+      "spec": "0.5.24",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-mnemon"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-prompt-enhance",
+      "version": "0.2.7",
+      "spec": "0.2.7",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-prompt-enhance"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-skill-picker",
+      "version": "0.5.28",
+      "spec": "0.5.28",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-skill-picker"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dshmarket",
+      "version": "1.66.11",
+      "spec": "^1.66.11",
+      "isBundle": true,
+      "inBundles": [
+        "dshmarket"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "treg-dsh",
+      "version": "0.22.0",
+      "spec": "github:superdesigndev/treg#da2630c9248453d94d5c0e7e17796d144e905a4d",
+      "isBundle": true,
+      "inBundles": [
+        "treg-dsh"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-agent-team-profile",
+      "version": "",
+      "isBundle": true,
+      "inBundles": [
+        "@deepseek-ai/dsh-experimental-agent-team-profile"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-auto-review",
+      "version": "",
+      "isBundle": true,
+      "inBundles": [
+        "@deepseek-ai/dsh-experimental-auto-review"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-schedule-bundle",
+      "version": "",
+      "isBundle": true,
+      "inBundles": [
+        "@deepseek-ai/dsh-experimental-schedule-bundle"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@agents-anywhere/dsh-bridge-next",
+      "version": "",
+      "isBundle": true,
+      "inBundles": [
+        "@agents-anywhere/dsh-bridge-next"
+      ],
+      "enabled": true
+    }
+  ],
+  "patch": [
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "ui-settings-account",
+      "raw": {
+        "id": "ui-settings-account",
+        "name": "@deepseek-ai/dsh-client-ui-settings-account",
+        "config": {
+          "version": 1,
+          "step": "done",
+          "purpose": null,
+          "process": "standard",
+          "completion": "skipped",
+          "usage": "compact",
+          "developerTools": false
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "ui-chat",
+      "raw": {
+        "id": "ui-chat",
+        "name": "@deepseek-ai/dsh-client-ui-chat",
+        "config": {
+          "transcriptView": "standard",
+          "performanceUsage": "compact"
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "ui-settings",
+      "raw": {
+        "id": "ui-settings",
+        "name": "@deepseek-ai/dsh-client-ui-settings",
+        "config": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "llm-pi-ai",
+      "raw": {
+        "id": "llm-pi-ai",
+        "name": "@deepseek-ai/dsh-llm-pi-ai",
+        "config": {
+          "providers": {
+            "cjdx": {
+              "displayName": "cjdx",
+              "apiKeyEnv": "CJDX_API_KEY",
+              "api": "openai-completions",
+              "baseURL": "http://api.yangtzeu.edu.cn/v1",
+              "models": [
+                {
+                  "id": "DeepSeek-V4.1-Flash",
+                  "name": "DeepSeek-V4.1-Flash",
+                  "reasoningEfforts": {
+                    "low": "low",
+                    "medium": "medium",
+                    "high": "high",
+                    "xhigh": "xhigh",
+                    "max": "max"
+                  },
+                  "input": [
+                    "text",
+                    "image"
+                  ]
+                },
+                {
+                  "id": "DeepSeek-V4-Flash",
+                  "name": "DeepSeek-V4-Flash",
+                  "reasoningEfforts": {
+                    "low": "low",
+                    "medium": "medium",
+                    "high": "high",
+                    "xhigh": "xhigh",
+                    "max": "max"
+                  }
+                },
+                {
+                  "id": "Qwen3.6-35b-A3B",
+                  "name": "Qwen3.6-35b-A3B",
+                  "reasoningEfforts": {
+                    "low": "low",
+                    "medium": "medium",
+                    "high": "high",
+                    "xhigh": "xhigh",
+                    "max": "max"
+                  },
+                  "input": [
+                    "text",
+                    "image"
+                  ]
+                },
+                {
+                  "id": "Qwen3-embedding-8B",
+                  "name": "Qwen3-embedding-8B"
+                },
+                {
+                  "id": "Qwen3-reranker-8B",
+                  "name": "Qwen3-reranker-8B"
+                },
+                {
+                  "id": "Qwen3-reranker-4B",
+                  "name": "Qwen3-reranker-4B"
+                },
+                {
+                  "id": "Qwen3-embedding-4B",
+                  "name": "Qwen3-embedding-4B"
+                },
+                {
+                  "id": "Qwen3.8-27B",
+                  "name": "Qwen3.8-27B",
+                  "input": [
+                    "text",
+                    "image"
+                  ]
+                }
+              ]
+            },
+            "apinebula-gpt": {
+              "displayName": "apinebula-gpt",
+              "apiKeyEnv": "APINEBULA_GPT_API_KEY",
+              "api": "openai-responses",
+              "baseURL": "https://apinebula.ai/v1",
+              "models": [
+                {
+                  "id": "gpt-6.1-sol",
+                  "name": "gpt-6.1-sol",
+                  "input": [
+                    "text",
+                    "image"
+                  ],
+                  "reasoningEfforts": {
+                    "low": "low",
+                    "medium": "medium",
+                    "high": "high",
+                    "xhigh": "xhigh",
+                    "max": "max"
+                  }
+                },
+                {
+                  "id": "gpt-6-astra",
+                  "name": "gpt-6-astra",
+                  "input": [
+                    "text",
+                    "image"
+                  ],
+                  "reasoningEfforts": {
+                    "low": "low",
+                    "medium": "medium",
+                    "high": "high",
+                    "xhigh": "xhigh",
+                    "max": "max"
+                  }
+                },
+                {
+                  "id": "gpt-6-sol",
+                  "name": "gpt-6-sol",
+                  "input": [
+                    "text",
+                    "image"
+                  ],
+                  "reasoningEfforts": {
+                    "low": "low",
+                    "medium": "medium",
+                    "high": "high",
+                    "xhigh": "xhigh",
+                    "max": "max"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "agent-default-model",
+      "raw": {
+        "id": "agent-default-model",
+        "name": "@deepseek-ai/dsh-agent-default-model",
+        "config": {
+          "provider": "trae",
+          "model": "Doubao-Seed-Evolving"
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "hindsight",
+      "raw": {
+        "id": "hindsight",
+        "disabled": false
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "web-ui-skill-explorer",
+      "raw": {
+        "id": "web-ui-skill-explorer",
+        "disabled": false
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "desktop-shell",
+      "raw": {
+        "id": "desktop-shell",
+        "name": "dsh-plugin-desktop",
+        "config": {
+          "mode": "compatibility",
+          "macosMaterial": "transparent",
+          "windowsMaterial": "off",
+          "openBrowser": false,
+          "networkExposure": "loopback"
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "desktop-notifications",
+      "raw": {
+        "id": "desktop-notifications",
+        "name": "dsh-plugin-desktop/notifications",
+        "config": {
+          "enabled": true,
+          "notifyOnTurnCompletion": true,
+          "notifyOnTurnFailure": true,
+          "notifyOnJobCompletion": true,
+          "notifyOnJobFailure": true,
+          "notifyOnScheduleCompletion": true,
+          "notifyOnScheduleFailure": true
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "computer-use-cua-driver-native",
+      "raw": {
+        "id": "computer-use-cua-driver-native",
+        "disabled": false
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "web-ui-pet",
+      "raw": {
+        "id": "web-ui-pet",
+        "name": "@linxin666/dsh-pet",
+        "config": {
+          "visible": false,
+          "size": 160,
+          "right": 100,
+          "bottom": 78,
+          "petId": "whale-girl"
+        },
+        "disabled": true
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "mnemon",
+      "raw": {
+        "id": "mnemon",
+        "name": "dsh-mnemon",
+        "config": {
+          "remoteAccess": "read-only",
+          "timeoutMs": 10000,
+          "defaultRecallLimit": 10,
+          "embedding": {
+            "enabled": true,
+            "endpoint": "http://api.yangtzeu.edu.cn/v1",
+            "model": "Qwen3-embedding-8B",
+            "protocol": "openai",
+            "apiKey": ""
+          },
+          "recallQuality": {
+            "policy": "strict-v1",
+            "lowScoreThreshold": 0.25,
+            "highScoreThreshold": 0.6,
+            "candidateMultiplier": 3,
+            "maxMediumResults": 4,
+            "maxUnknownResults": 2
+          },
+          "routingGuidance": true,
+          "tabEnabled": true,
+          "writeEnabled": true,
+          "lifecycleEnabled": true,
+          "recallMode": "guided",
+          "writebackMode": "guided",
+          "idleReviewMs": 30000
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "auto-continue",
+      "raw": {
+        "id": "auto-continue",
+        "name": "dsh-client-auto-continue",
+        "config": {
+          "continueText": "继续完成原任务，从中断处接着处理；先确认上一步状态，避免重复已完成的操作和内容。",
+          "continueTextMaxTokens": "",
+          "graceMs": 5000,
+          "cooldownMs": 30000,
+          "scanLimit": 3
+        }
+      }
+    },
+    {
+      "file": "profiles/desktop/cordis.patch.yml",
+      "lineId": "dsh-connect-trae",
+      "raw": {
+        "id": "dsh-connect-trae",
+        "name": "dsh-connect-trae",
+        "config": {
+          "showPointsInMainUi": true,
+          "regions": {
+            "ai": {
+              "enabled": false,
+              "lastCatalog": [],
+              "enabledModelIds": [],
+              "imageModelIds": [],
+              "contextBudgets": {}
+            },
+            "cn": {
+              "enabled": true,
+              "lastCatalog": [
+                {
+                  "id": "Doubao-Seed-2.1-Pro",
+                  "name": "Seed-2.1-Pro-0915",
+                  "contextWindow": 256000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.08,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high"
+                    ],
+                    "defaultEffort": "high"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "Doubao-Seed-2.1-Turbo",
+                  "name": "Seed-2.1-Turbo",
+                  "contextWindow": 256000,
+                  "creditMultiplier": 0.2,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "Doubao-Seed-Code",
+                  "name": "Seed-Code",
+                  "contextWindow": 184000,
+                  "maxContextWindow": 184000,
+                  "creditMultiplier": 0.06,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_agent_remote"
+                },
+                {
+                  "id": "minimax-m3",
+                  "name": "MiniMax-M3",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.26,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "minimax-m2.7",
+                  "name": "MiniMax-M2.7",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 200000,
+                  "creditMultiplier": 0.27,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_coder"
+                },
+                {
+                  "id": "glm-5.2",
+                  "name": "GLM-5.2",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.78,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "high"
+                  },
+                  "reasoningEfforts": {
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "kimi-k2.7-code",
+                  "name": "Kimi-K2.7-Code",
+                  "contextWindow": 200000,
+                  "creditMultiplier": 0.83,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "kimi-k2.6",
+                  "name": "Kimi-K2.6",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 200000,
+                  "creditMultiplier": 0.75,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "qwen-3.7-plus",
+                  "name": "Qwen3.7-Plus",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.25,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "qwen-3.6-plus",
+                  "name": "Qwen3.6-Plus",
+                  "contextWindow": 200000,
+                  "creditMultiplier": 0.26,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_coder"
+                },
+                {
+                  "id": "Doubao-Seed-Evolving",
+                  "name": "Seed-Evolving",
+                  "contextWindow": 256000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.08,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "step-5-preview",
+                  "name": "Step-5-Preview",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.48,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high"
+                    ],
+                    "defaultEffort": "high"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "glm-5.3",
+                  "name": "GLM-5.3",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.78,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "xhigh"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "deepseek-v4.1-flash",
+                  "name": "DeepSeek-V4.1-Flash",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.15,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "high"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "DeepSeek-V4-Flash-Official",
+                  "name": "DeepSeek-V4-Flash 正式版",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.2,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "high"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "DeepSeek-V4-Pro-Official",
+                  "name": "DeepSeek-V4-Pro 正式版",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.72,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "high"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "kimi-k3",
+                  "name": "Kimi-K3",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 1.83,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "xhigh"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "qwen3.8-max",
+                  "name": "Qwen3.8-Max",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 1.5,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "high"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  },
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "Doubao-Seed-2.0-Code",
+                  "name": "Doubao-Seed-2.0-Code",
+                  "contextWindow": 184000,
+                  "maxContextWindow": 184000,
+                  "creditMultiplier": 0.39,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "glm-5.1",
+                  "name": "GLM-5.1",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 200000,
+                  "creditMultiplier": 0.83,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_agent_remote"
+                },
+                {
+                  "id": "glm-5v-turbo",
+                  "name": "GLM-5V-Turbo",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 200000,
+                  "creditMultiplier": 0.51,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_coder"
+                },
+                {
+                  "id": "glm-5",
+                  "name": "GLM-5",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 200000,
+                  "creditMultiplier": 0.7,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "DeepSeek-V4-Pro",
+                  "name": "DeepSeek-V4-Pro",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 200000,
+                  "creditMultiplier": 0.72,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "DeepSeek-V4-Flash",
+                  "name": "DeepSeek-V4-Flash",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 200000,
+                  "creditMultiplier": 0.2,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": false,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_work_remote"
+                },
+                {
+                  "id": "kimi-k2.5",
+                  "name": "Kimi-K2.5",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 200000,
+                  "creditMultiplier": 0.48,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_coder"
+                },
+                {
+                  "id": "qwen-3.5",
+                  "name": "Qwen3.5-Plus",
+                  "contextWindow": 200000,
+                  "creditMultiplier": 0.26,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "wireFunction": "solo_agent_remote"
+                },
+                {
+                  "id": "glm-5.3-flashx",
+                  "name": "GLM-5.3-FlashX",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.31,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "xhigh"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  }
+                },
+                {
+                  "id": "glm-5.3-flash",
+                  "name": "GLM-5.3-Flash",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.06,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "xhigh"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  }
+                },
+                {
+                  "id": "kimi-k2.8-preview",
+                  "name": "Kimi-K2.8-Preview",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.98,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "xhigh"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  }
+                },
+                {
+                  "id": "qwen3.8-flash",
+                  "name": "Qwen3.8-Flash",
+                  "contextWindow": 200000,
+                  "maxContextWindow": 1000000,
+                  "creditMultiplier": 0.08,
+                  "input": [
+                    "text"
+                  ],
+                  "multimodal": true,
+                  "reasoningSupported": true,
+                  "reasoning": {
+                    "supported": [
+                      "low",
+                      "high",
+                      "xhigh"
+                    ],
+                    "defaultEffort": "high"
+                  },
+                  "reasoningEfforts": {
+                    "low": "light",
+                    "high": "high",
+                    "xhigh": "extra_high"
+                  }
+                }
+              ],
+              "enabledModelIds": [
+                "Doubao-Seed-2.1-Pro",
+                "Doubao-Seed-2.1-Turbo",
+                "step-5-preview",
+                "deepseek-v4.1-flash",
+                "kimi-k3",
+                "qwen3.8-max",
+                "glm-5.3-flashx",
+                "glm-5.3-flash",
+                "qwen3.8-flash",
+                "Doubao-Seed-Evolving"
+              ],
+              "imageModelIds": [],
+              "contextBudgets": {
+                "Doubao-Seed-2.1-Pro": 1000000,
+                "Doubao-Seed-Evolving": 1000000,
+                "deepseek-v4.1-flash": 1000000
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "pnpmWorkspace": "packages:\n  - .\n\nnodeLinker: hoisted\nautoInstallPeers: false\nminimumReleaseAgeExclude:\n  - '@linxin666/dsh-client-ui-community-plugins@0.4.4'\n  - '@linxin666/dsh-client-ui-git-graph@0.4.4'\n  - '@linxin666/dsh-client-ui-market@0.4.4'\n  - '@linxin666/dsh-client-ui-model-capabilities@0.4.4'\n  - '@linxin666/dsh-client-ui-plugin-manager@0.4.4'\n  - '@linxin666/dsh-client-ui-preset-center@0.4.4'\n  - '@linxin666/dsh-client-ui-skill-explorer@0.4.4'\n  - '@linxin666/dsh-client-ui-skin-center@0.4.4'\n  - '@linxin666/dsh-client-ui-task-board@0.4.4'\n  - '@linxin666/dsh-client-ui-web-ui-settings@0.4.4'\n  - '@linxin666/dsh-i18n@0.4.4'\n  - '@linxin666/dsh-liangshen@0.4.4'\n  - '@linxin666/dsh-pet@0.4.4'\n  - '@linxin666/dsh-remote-web-ui@0.4.4'\n  - '@linxin666/dsh-session-archive@0.4.4'\n  - '@linxin666/dsh-ssh@0.4.4'\n  - '@linxin666/dsh-update@0.4.4'\n  - '@linxin666/dsh-usage@0.4.4'\n  - '@linxin666/dsh-web-all@0.4.4'\n  - dshmarket@1.66.6\n  - dsh-config-manager@0.1.68\n  - dsh-client-auto-continue@0.12.1\n  - '@vectorize-io/hindsight-coding-agents@0.8.0'\n  - dsh-image-gen@0.8.5\n  - '@michengai/dsh-agency-agents@1.0.7'\nallowBuilds:\n  cloudflared: true\n  cpu-features: true\n  ssh2: true\n"
+}
